@@ -1,0 +1,49 @@
+.searh {
+    display: grid;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.search__input,
+.search__input:focus {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 10px 30px 10px 15px;
+}
+.search__icon {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.search__icon .MuiSvgIcon-root {
+    color: white;
+}
+.namePage {
+    color: white;
+    font-size: 3em;
+    order: -2;
+    margin-bottom: 20px;
+}
+.namePage span {
+    color: #ff00c6;
+    margin-left: -14px;
+}
+
+/* < col-md | Medium and Up */
+@media (min-width: 500px) {
+    .searh {
+        grid-template-columns: 1fr 1fr;
+    }
+    .search__container {
+        display: flex;
+        align-items: center;
+    }
+    .namePage {
+        margin-left: auto;
+        margin-right: 40px;
+        margin-bottom: 0;
+        order: 0;
+    }
+}

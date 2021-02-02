@@ -1,0 +1,85 @@
+/* Los cards */
+.card {
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    border-radius: 45px;
+}
+.card .card__aside figure .btn  {
+    display: none;
+}
+
+.card:hover, .card.active {
+    background-color: #0b153e;
+}
+.card:hover  .card__aside figure, .card.active .card__aside figure  {
+    position: relative;
+    line-height: 0;
+}
+.card:hover .card__aside figure .btn, .card.active .card__aside figure .btn  {
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+    color: #030414;
+}
+.card:hover .card__aside figure .btn > *, .card.active .card__aside figure .btn > *  {
+    font-size: 35px;
+}
+
+.card__header {
+    padding: 20px;
+}
+.card__action {
+    padding: 35px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.card__action > *:not(:last-child) {
+    margin-right: 15px;
+}
+.card__aside {
+    padding-left: 20px;
+    cursor:pointer;
+    position: relative;
+}
+.card__time {
+    color: #afa7af;
+}
+.card__aside figure {
+}
+.card__img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card__header > * {
+    margin: 0;
+}
+.card__header {
+    text-align: left;
+    color: #afa7af;
+}
+
+.card_icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.card_icon .MuiSvgIcon-root {
+    color: white;
+}
